@@ -1,0 +1,7 @@
+tr -sc 'A-Za-z' '\n' <sh.txt     ==> tr command
+
+tr -sc 'A-Za-z' '\n' <sh.txt | sort | uniq -c   ==>sort command
+
+tr -sc 'A-Za-z' '\n' <sh.txt | tr A-Z a-z | sort | uniq -c  ===>upper to lower case
+
+tr -sc 'A-Za-z' '\n' <sh.txt | tr A-Z a-z | sort | uniq -c | sort -n -r  ===> most frequent words
